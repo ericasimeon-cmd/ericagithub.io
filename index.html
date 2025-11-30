@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-page" class="login-container">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Enter username">
+        <input type="password" id="password" placeholder="Enter password">
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    </div>
+
+    <div id="logout-form" style="display:none;">
+    <h2>Welcome, <span id="user-name"></span>!</h2>
+    <li><a href="#" onclick="Logout()">Logout</a></li>
+
+
+</div>
+
+
+
+
+    <div id="portfolio-page" style="display: none;">
+
+        <header>
+            <a class="logo"> ERICA G. SIMEON PERSONAL PORTFOLIO</a>
+
+            <ul class="nav">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#" onclick="Logout()">Logout</a></li>
+            </ul>
+        </header>
+
+        <section class="home" id="home">
+
+            <div class="home-content">
+                <h2>Hello!, my name is<h2>
+                <h1>Erica G. Simeon<h1>
+                              <h2 class="subtitle">CEIT <span>MASARAP MASARAP!!!</span> CEIT <span>PATIKIM PATIKIM!!!</span></h2>
+
+                <p class="quote">
+                   "When life gives you lemons, make lemonade"
+                </p>
+            </div>
+
+                <div class="home-img">
+                <img src= blob:https://www.facebook.com/203a7df9-840a-4e18-984e-9b40fd7102e5 class="home-img">
+            </div>
+
+        </section>
+
+
+        <section class="about" id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-container">
+                <img src= blob:https://www.facebook.com/a451f124-54ae-4d5a-b966-58b0634b5297 class="about-img">.
+
+
+                <div class="about-text">
+                    <h2>
+                    Name: Erica G. Simeon
+                    </h2>
+                    <p>
+                    <b>Age: </b>18 years old.
+                    </p>
+                    <p>
+                    <b>Birthday: </b>April,12 2007.
+                    </p>
+                    <p>
+                    <b>Address: </b>Purok-7 brgy marcos, Magallanes, Agusan del Norte.
+                    </p>
+                    <p>
+                    <b>Course: </b>Bachelor of Science in Information Technology.
+                    </p>
+                    <p>
+                    <b>Hobbies: </b>I like to dance, playing online games and eating.
+                    </p>
+                    <p>
+                    <b>Favorite Food: </b>kilawin, chicken, Lechon Baboy.
+                    </p>
+                    <p>
+                    <b>Things I like: </b>i like reading book and watching movies
+                    </p>
+                    <p>
+                    <b>Things I dislike: </b> disrespect my perents.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Portfolio" id="services">
+            <h2 class="section-title">MY PERSONAL INFO:</h2>
+
+            <div class="service-boxes">
+
+                <div class="service-box">
+                    <h3>FATHER INFO: </h3>
+                    <P>FATHER NAME: RODERICK LEGARA SIMEON <P>
+                    <P>AGE: 46 YEARS OLD <P>
+                    <P>FATHER WORK:WELDER <P>
+                     <p></p>
+                </div>
+
+                <div class="service-box">
+                    <h3> SCHOOL:</h3>
+                    <p>ELEMENTARY SCHOOL: MAGALLANES CENTRAL ELEMENTARY SCHOOL</p>
+                    <p>HIGHSCHOOL SCHOOL: MAGALLANES NATIONAL HIGH SCHOOL</p>
+
+                </div>
+
+                <div class="service-box">
+                    <h3>MOTHER INFO:</h3>
+                    <p>MOTHER NAME: JOAN GELLOAGAN SIMEON</p>
+                    <P>MOTHER WORK: FACTURY WORKER</P>
+                    <P>AGE: 46 YEARS OLD <P></P>
+                </div>
+
+            </div>
+        </section>
+ 
+        <script>
+        function login() {
+            document.getElementById("login-page").style.display = "none";
+            document.getElementById("portfolio-page").style.display = "block";
+        }
+
+        function logout() {
+            document.getElementById("portfolio-page").style.display = "none";
+            document.getElementById("login-page").style.display = "flex";
+        }
+
+    </script>
+
+</body>
+
+
+</html>
